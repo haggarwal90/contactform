@@ -6,7 +6,7 @@ class Footer extends React.PureComponent {
   render() {
     return (
       <div className="app-footer">
-        Display Copyright information &copy; 2018 Himanshu
+        <p>Display Copyright information &copy; 2018 Himanshu</p>
       </div>
     );
   }

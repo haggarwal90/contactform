@@ -34,10 +34,6 @@ const FormSchema = new Schema({
     type : Number,
     required : true 
   },
-  country : {
-    type : String,
-    required : true 
-  },
   comments : {
     type : String,
     required : true 

@@ -42,9 +42,9 @@ router.post('/login', async (req, res, next) => {
 router.post('/form', async (req, res, next) => {
   try {
     //Find the user associated with the email provided by the user
-    const { firstname, lastname, email, telephone, address, city, state, zip, country, comments } = req.body;
+    const { firstname, lastname, email, telephone, address, city, state, zip, comments } = req.body;
     
-    const form = await FormModel.create({firstname, lastname, email, telephone, address, city, state, zip, country, comments});
+    const form = await FormModel.create({firstname, lastname, email, telephone, address, city, state, zip, comments});
 
     res.json({ 
       message : 'Form submitted successfully',
