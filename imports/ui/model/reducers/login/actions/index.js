@@ -16,20 +16,20 @@ export const login = param => async (dispatch) => {
     localStorage.setItem('lastLoginDate', lastLoginDate);
 
     // Goto Home on success login
-    history.replace('/administration');
+    history.replace('/');
     location.reload();
 
-    console.log('***Login successful***');
+    console.log('***Login successful*** ', response.data.email);
     dispatch({
       'type': LOGIN_COMPLETED,
       'payload': response.data && response.data.token,
       'date': lastLoginDate,
     });
   } catch(error) {
-    console.log('***Login failed***');
+    console.log('***Login failed***', error && error.response && error.response.data && error.response.data.error);
     dispatch({
       'type': LOGIN_FAILED,
-      'payload': error,
+      'payload': error && error.response && error.response.data && error.response.data.error,
     });
   }
 }

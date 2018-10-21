@@ -6,6 +6,12 @@ import moment from 'moment';
 
 import './header.style.scss';
 
+const onLogout = () => {
+  localStorage.removeItem('token');
+  localStorage.removeItem('lastLoginDate');
+  location.reload();
+}
+
 const Header = (props) => {
   const token = props.token || localStorage.getItem('token');
   const lastLoginDate = props.lastLoginDate || localStorage.getItem('lastLoginDate');
@@ -17,7 +23,8 @@ const Header = (props) => {
       <Link to="/">Home</Link>
       <Link to="/contactform">Contact form</Link>
       { isLoggedIn && <Link to="/administration">Administration</Link> }
-      { !isLoggedIn && <Link to="/signin">Login</Link> }        
+      { isLoggedIn && <Link to="/" onClick={onLogout}>Logout</Link> }
+      { !isLoggedIn && <Link to="/signin">Login</Link> }
     </div>
   );
 }

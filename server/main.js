@@ -29,3 +29,25 @@ app.use(function(err, req, res, next) {
 });
 
 WebApp.connectHandlers.use(app);
+
+
+// Create Admin on Meteor startup
+const UserModel = require('./model/user');
+
+Meteor.startup(() => {
+  try {
+    UserModel.findOne({
+      email: 'himanshu@gmail.com',
+    }, function (error, user) {
+        if( !user ){
+          //If the user isn't found in the database, return a message
+          UserModel.create({
+            email: 'himanshu@gmail.com', 
+            password: 'himanshu', 
+          });
+        } 
+    });   
+  } catch(error) {
+    console.log(error);
+  }
+});
