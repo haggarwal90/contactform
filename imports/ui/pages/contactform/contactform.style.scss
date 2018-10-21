@@ -1,0 +1,9 @@
+.contact-form {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  .contact-form__submit {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
