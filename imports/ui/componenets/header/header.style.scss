@@ -1,28 +1,17 @@
 .app-header {
-  width: 100%;
-  position: fixed;
-  right: 10px;
   display: flex;
   justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: #FC6704;
 
   a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 20px 16px;
+    padding: 20px;
     text-decoration: none;
   }
 
   a:hover {
     background-color: #D4661D;
-  }
-
-  .signin {
-    margin: 12px;
-    color: #8B4000;
   }
 }

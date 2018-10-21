@@ -24,7 +24,7 @@ router.get('/forms', async (req, res, next) => {
     const forms = await FormModel.find();
 
     res.json({
-      data: forms,
+      forms,
     })
 
   } catch (error) {

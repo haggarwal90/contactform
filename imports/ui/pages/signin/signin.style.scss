@@ -1,10 +1,9 @@
 .sign-in {
-  .material-icons {
-    display: block;
-    float: right;
-    cursor: pointer;
-  }
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
   .sign-in__login {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
   }
 }

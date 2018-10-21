@@ -1,3 +1,19 @@
 .home-page {
-  
+  position: absolute;
+  top: 50%;
+  display: flex;
+  .home-page__title {
+    text-align: center;
+    flex-grow: 1;
+    width: 100%;
+    font-size: 50px;
+    color: #FC6704;
+  }
+  .home-page__discription {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
