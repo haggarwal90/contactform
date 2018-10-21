@@ -1,0 +1,28 @@
+.admin-page {
+  .admin-page__header {
+    text-align: center;
+  }
+  .admin-page__forms {
+    margin-top: 50px;
+    margin-left: 50px;
+
+    .form-row:nth-child(even) {
+      background-color: #FC6704;
+      opacity: 0.6;
+    }
+
+    .form-row {
+      display: flex;
+      .form-row__description {
+        flex-grow: 1;
+        width: 100%;
+      }
+      .form-row__view {
+        flex-grow: 1;
+        width: 100%;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}

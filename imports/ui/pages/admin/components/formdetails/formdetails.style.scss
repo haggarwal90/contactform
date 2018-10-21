@@ -1,0 +1,18 @@
+.form-details {
+  .form-details__content{
+    .form-details__content--row {
+      display: flex;
+      .label {
+        flex-grow: 1;
+        width: 100%;
+      }
+      .value {
+        flex-grow: 1;
+        width: 100%;
+      }
+    }
+  }
+  .form-details__close {
+    float: right;
+  }
+}
