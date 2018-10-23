@@ -9,4 +9,6 @@ Run command : meteor --port 8443
 
 URL : http://localhost:8443
 
+## Sample pictures
 
+![alt text](https://github.com/haggarwal90/contactform/blob/master/demo/contact-home.png)
