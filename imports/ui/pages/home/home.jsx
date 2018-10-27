@@ -4,7 +4,7 @@ import './home.style.scss';
 
 class Home extends React.PureComponent {
   render() {
-    console.log('****Home page rendered****')
+    console.log('****Home page rendered****');
     return (
       <div className="home-page">
         <div className="home-page__title">Contact us</div>
