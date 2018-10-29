@@ -3,8 +3,8 @@ import { Switch, Route, withRouter  } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import moment from 'moment';
 
-import Header from './componenets/header';
-import Footer from './componenets/footer';
+import Header from './components/header';
+import Footer from './components/footer';
 import Home from './pages/home';
 import ContactForm from './pages/contactform';
 import Admin from './pages/admin';

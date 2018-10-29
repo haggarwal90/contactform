@@ -105,6 +105,8 @@ class ContactForm extends React.PureComponent {
 
     this.onStateChange({
       errorFields,
+    }, () => {
+      this.forceUpdate();
     });
 
     return isParamValid;  

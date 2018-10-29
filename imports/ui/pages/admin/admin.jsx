@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Modal from '../../componenets/modal';
+import Modal from '../../components/modal';
 import FormDetails from './components/formdetails';
 
 import { fetchForms } from '../../model/reducers/contactform/actions';
