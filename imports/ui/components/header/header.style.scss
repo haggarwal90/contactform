@@ -1,0 +1,17 @@
+.app-header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #FC6704;
+
+  a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: #D4661D;
+  }
+}
